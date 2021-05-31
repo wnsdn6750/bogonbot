@@ -1,4 +1,5 @@
 import discord
+import os
 from discord import voice_client
 from discord.channel import VoiceChannel
 from discord.ext import commands
@@ -412,5 +413,5 @@ async def 즐겨찾기재생(reaction, users):
             elif str(reaction.emoji) == '\U0001F4DD':
                 await reaction.message.channel.send("오류코드 001")
 
-
-bot.run('ODQ1OTQxNjg5MTIwOTgwOTky.YKoSlw.lL3-EYWaDwgDHlW2mneiiH3w1Q8')
+access_token = os.environ["BOT_TOKEN"]
+bot.run(acces_token)
